@@ -25,6 +25,7 @@ head {
     --button: #e4dad6;
     --button-text: #573B32;
     --grid-box: auto auto auto auto;
+    --viewzone: 1200px;
 }
 
 body {

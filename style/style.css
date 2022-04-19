@@ -144,7 +144,7 @@ header li label img {
 }
 
 .viewzone {
-    width: 1200px;
+    width: var(--viewzone);
     height: auto;
 }
 

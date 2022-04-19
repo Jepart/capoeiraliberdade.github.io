@@ -28,9 +28,9 @@ const membro = [
     ["Brian", "Mestre USA", "brian", "A", "B", "C", "C", "C"],
     ["Scooby Doo", "Mestre", "ricardo", "A", "B", "C", "C", "C"],
     ["Xerife", "Mestre", "xerife", "A", "B", "C", "C", "C"],
-    ["Pardal", "Contra Mestre ", "pardal", "A", "B", "C", "C", "C"],
-    ["Andorinha", "Contra Mestre ", "andorinha", "A", "B", "C", "C", "C"],
-    ["Russinho", "Contra Mestre ", "russinho", "A", "B", "C", "C", "C"],
+    ["Pardal", "Contramestre ", "pardal", "A", "B", "C", "C", "C"],
+    ["Andorinha", "Contramestre ", "andorinha", "A", "B", "C", "C", "C"],
+    ["Russinho", "Contramestre ", "russinho", "A", "B", "C", "C", "C"],
     ["Samuray", "Instrutor", "samuray", "A", "B", "C", "C", "C"]
 ]
 for (i = 0; i < membro.length; i++) {

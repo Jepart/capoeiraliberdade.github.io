@@ -1,0 +1,16 @@
+.dark {
+    --background-color: #161618;
+    --background-header: #0E0E0F;
+    --amarelo: #F4C401;
+    --laranja: #e67c56;
+    --button: #1a1a1b;
+    --button-text: #ECE4CD;
+}
+
+.dark .mode-light {
+    display: none;
+}
+
+.dark .mode-dark {
+    display: block;
+}

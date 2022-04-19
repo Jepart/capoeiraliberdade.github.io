@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Quicksand:wght@300;400;500;600;700&family=Square+Peg&display=swap');
+@import "mode-dark.css";
+@import "mobile.css";
+*,
+*::before,
+::after {
+    margin: 0 auto;
+    padding: 0 auto;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Quicksand', sans-serif;
+    transition: 0.5s all;
+}
+
+head {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --background-header: #fff;
+    --background-color: #F5F4F4;
+    --amarelo: #F8B042;
+    --laranja: #DF531E;
+    --button: #e4dad6;
+    --button-text: #573B32;
+    --grid-box: auto auto auto auto;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--button-text);
+}
+
+
+/* Padrão */
+
+.mode-light {
+    display: block;
+}
+
+.mode-dark {
+    display: none;
+}
+
+
+/* Shadow */
+
+.shadow {
+    -webkit-box-shadow: 0px 0px 15px -5px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 15px -5px rgba(0, 0, 0, 0.5);
+}
+
+
+/* Title */
+
+header .title {
+    width: 200px;
+    height: 55px;
+    float: left;
+    margin-top: 5px;
+}
+
+header .title img {
+    width: 55px;
+    height: auto;
+    float: left;
+}
+
+header .title h3 {
+    font-family: 'Anton', sans-serif;
+    color: var(--amarelo)
+}
+
+header .title h4 {
+    font-family: 'Square Peg', cursive;
+    margin: -5px 10px 0 0;
+    float: right;
+    color: var(--laranja)
+}
+
+
+/* Menu*/
+
+header {
+    width: 100%;
+    height: 80px;
+    background: var(--background-header);
+    position: fixed;
+    z-index: 9999;
+    overflow: hidden;
+}
+
+header ul {
+    padding: 0;
+    margin-top: 20px;
+    float: right;
+}
+
+header a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    float: left;
+}
+
+header li {
+    float: left;
+}
+
+header a li {
+    padding: 10px 20px;
+    margin: 0 5px;
+    color: black;
+    opacity: 0.9;
+    font-weight: 600;
+    color: var(--button-text);
+    border-radius: 20px;
+}
+
+header a li:hover {
+    background: var(--button);
+    text-decoration: underline;
+}
+
+header a li img {
+    width: 20px;
+    height: auto;
+    margin-right: 10px;
+    float: left;
+}
+
+header li input {
+    display: none;
+}
+
+header li label img {
+    width: auto;
+    height: 25px;
+    margin: 5px 10px 0 5px;
+    border-radius: 20px;
+    opacity: 0.8;
+}
+
+.viewzone {
+    width: 1200px;
+    height: auto;
+}
+
+
+/* Article */
+
+article {
+    position: absolute;
+    margin-top: 80px;
+    padding: 10px 0;
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+}
+
+#sobre {
+    height: auto;
+    padding: 20px;
+}
+
+
+/* Membros */
+
+#membros {
+    width: 100%;
+    height: auto;
+    padding: 30px 0;
+    text-align: center;
+    background: var(--background-header);
+}
+
+#membros h2 {
+    margin-bottom: 30px;
+}
+
+#membros ul {
+    align-items: center;
+    display: grid;
+    grid-template-columns: var(--grid-box);
+    flex-direction: row;
+    justify-content: center;
+    padding: 0;
+    width: 100%;
+    height: auto;
+}
+
+#membros ul li {
+    float: left;
+    width: 250px;
+    margin: 10px 25px 20px 25px;
+    height: auto;
+}
+
+#membros .fotos {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 100px;
+    border: 5px solid #fff;
+    display: flex;
+}
+
+#membros .name {
+    margin: 20px;
+}
+
+#membros .name h5 {
+    font-style: italic;
+}
+
+#membros .social {
+    display: flexbox;
+}
+
+#membros .social img {
+    width: 32px;
+    margin: 0 5px;
+    height: auto;
+}
+
+#produtos {
+    padding: 20px 0;
+    height: auto;
+}

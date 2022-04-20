@@ -25,7 +25,7 @@ head {
     --button: #e4dad6;
     --button-text: #573B32;
     --grid-box: auto auto auto auto;
-    --viewzone: 1200px;
+    --viewzone: 1280px;
 }
 
 body {
@@ -225,7 +225,78 @@ article {
     height: auto;
 }
 
-#produtos {
-    padding: 20px 0;
+#ultimo {
+    padding: 30px 20px;
     height: auto;
+    text-align: center;
+}
+
+#ultimo .zone {
+    width: 100%;
+    height: auto;
+    padding: 10px 0;
+    display: grid;
+    grid-template-columns: var(--grid-box);
+    flex-direction: row;
+    justify-content: center;
+    text-align: left;
+}
+
+.card {
+    width: 300px;
+    height: auto;
+    padding: 10px 0 20px 0;
+    margin: 10px;
+    border-radius: 5px;
+    background: var(--background-header);
+    overflow: hidden;
+}
+
+.card img {
+    margin-top: -10px;
+    width: 100%;
+    height: 56.25%;
+    border-bottom: var(--button-text) 5px solid;
+}
+
+.card .titulo {
+    padding: 10px 15px;
+    opacity: 0.8;
+    width: auto;
+    height: 50px;
+    overflow: hidden;
+    font-weight: 600;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.card .resumo {
+    padding: 10px 15px;
+    opacity: 0.8;
+    width: auto;
+    height: 70px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    font-style: italic;
+}
+
+.card a .button {
+    margin-top: 15px;
+    margin-right: 15px;
+    float: right;
+    padding: 10px 15px;
+    background: var(--button);
+    color: var(--button-text);
+    border-radius: 4px;
+    font-weight: 600;
+    opacity: 0.8;
+}
+
+.card a .button:hover {
+    opacity: 1;
 }

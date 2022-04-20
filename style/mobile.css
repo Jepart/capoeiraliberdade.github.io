@@ -1,17 +1,23 @@
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1280px) {
     * {
         --grid-box: auto auto auto;
-       --viewzone: 100%;
+        --viewzone: 100%;
+    }
+    #ultimo .card:nth-child(4) {
+        display: none;
     }
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 960px) {
     * {
         --grid-box: auto auto;
     }
+    #ultimo .card:nth-child(4) {
+        display: block;
+    }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 640px) {
     * {
         --grid-box: auto;
     }

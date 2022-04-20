@@ -18,7 +18,7 @@ function modeLayout(mode) {
     }
 }
 
-function MenuCreate(link, title, text, img) {
+function MenuCreate(text, link, img, title) {
     UL = document.querySelector(".links-ul")
     if (link == "") { link = "#" }
 
@@ -120,5 +120,37 @@ function MembroCreate(Name, Desc, fotos, facebook, instagram, linkedin, twitter,
         divSocial.appendChild(A)
         A.appendChild(imgA)
     }
+}
 
+function createPost(Link, Title, Titulo, Resumo, img) {
+    const select = document.querySelector("#ultimo > .zone")
+
+    divCreate = document.createElement("div")
+    divCreate.classList.add("card", "shadow")
+
+    ImgCreate = document.createElement("img")
+    ImgCreate.src = img
+
+    TitleCreate = document.createElement("div")
+    TitleCreate.classList.add("titulo")
+    TitleCreate.innerText = Titulo
+
+    ResumoCreate = document.createElement("div")
+    ResumoCreate.classList.add("resumo")
+    ResumoCreate.innerText = Resumo
+
+    ACreate = document.createElement("a")
+    ACreate.href = Link
+    ACreate.title = Title
+
+    ButtonCreate = document.createElement("div")
+    ButtonCreate.classList.add("button")
+    ButtonCreate.innerText = "Continue Lendo"
+
+    select.appendChild(divCreate)
+    divCreate.appendChild(ImgCreate)
+    divCreate.appendChild(TitleCreate)
+    divCreate.appendChild(ResumoCreate)
+    divCreate.appendChild(ACreate)
+    ACreate.appendChild(ButtonCreate)
 }

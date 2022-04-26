@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Quicksand:wght@300;400;500;600;700&family=Square+Peg&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Quicksand:wght@300;400;500;600;700&family=Square+Peg&family=Water+Brush&display=swap');
 @import "mode-dark.css";
 @import "mobile.css";
 *,
@@ -26,6 +26,7 @@ head {
     --button-text: #573B32;
     --grid-box: auto auto auto auto;
     --viewzone: 1280px;
+    --grid-footer: auto auto auto;
 }
 
 body {
@@ -154,7 +155,7 @@ header li label img {
 article {
     position: absolute;
     margin-top: 80px;
-    padding: 10px 0;
+    padding: 10px 0 0 0;
     height: auto;
     width: 100%;
     overflow: hidden;
@@ -299,4 +300,64 @@ article {
 
 .card a .button:hover {
     opacity: 1;
+}
+
+
+/* Footer */
+
+footer {
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
+    background: var(--background-header);
+    bottom: 0;
+}
+
+footer .viewzone {
+    display: grid;
+    grid-template-columns: var(--grid-footer);
+    gap: 5%;
+}
+
+.boxFooter {
+    z-index: 10;
+    width: 100%;
+    color: var(--button-text);
+    margin: 10px 0;
+    padding: 0 10px;
+}
+
+.boxFooter h3 {
+    padding-bottom: 10px;
+}
+
+.boxFooter iframe {
+    border-radius: 10px;
+}
+
+.boxFooter .social {
+    margin-bottom: 40px;
+    align-items: center;
+    width: 230px;
+}
+
+.boxFooter .social a img {
+    width: 50px;
+    height: auto;
+    margin: 10px;
+}
+
+.boxFooter .copy {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.boxFooter .copy i {
+    font-family: 'Water Brush', cursive;
+    text-decoration: underline;
+    color: var(--button-text);
+}
+
+.boxFooter a {
+    color: var(--button-text);
 }

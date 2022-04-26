@@ -11,6 +11,7 @@
 @media only screen and (max-width: 960px) {
     * {
         --grid-box: auto auto;
+        --grid-footer: 100%;
     }
     #ultimo .card:nth-child(4) {
         display: block;
@@ -20,5 +21,6 @@
 @media only screen and (max-width: 640px) {
     * {
         --grid-box: auto;
+        --grid-footer: auto;
     }
 }

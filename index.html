@@ -10,6 +10,7 @@
 </head>
 
 <body>
+
     <header class="shadow">
         <div class="title">
             <img src="img/Logo.svg" alt="">
@@ -18,19 +19,29 @@
                 <h4>Rio de Janeiro</h4>
             </span>
         </div>
-        <ul>
-            <li class="mode">
-                <label for="color">
+        <div class="links">
+            <ul>
+                <li class="mode">
+                    <label for="color">
                     <input type="checkbox" id="color">
                     <img src="img/mode-dark/lampada.svg" alt="" class="mode-dark">
                     <img src="img/mode-light/lampada.svg" alt="" class="mode-light">
                 </label>
-            </li>
-        </ul>
-        <ul class="links-ul">
-        </ul>
-
+                </li>
+            </ul>
+            <ul class="links-ul">
+            </ul>
+            <div class="menuclose">
+                <div class="menuclose-icon"></div>
+            </div>
+        </div>
     </header>
+    <div class="bgmenu-mobile"></div>
+
+    <div class="menumobile">
+        <div class="menuexpand"></div>
+    </div>
+
     <article>
         <div id="sobre" class="viewzone">
             <h2>Sobre o Projeto</h2>
@@ -109,7 +120,6 @@
             </div>
         </footer>
     </article>
-
 </body>
 <script src=" modulos/modules.js "></script>
 <script src="scripts/script.js "></script>

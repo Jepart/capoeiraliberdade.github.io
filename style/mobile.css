@@ -1,25 +1,69 @@
+.mobile .links {
+    display: block;
+    transform: translateX(0);
+}
+
+.mobile .bgmenu-mobile {
+    display: block;
+    opacity: 0.5;
+}
+
 @media only screen and (max-width: 1280px) {
-    * {
+    body {
         --grid-box: auto auto auto;
         --viewzone: 100%;
+        --padding-menu: 10px;
     }
     #ultimo .card:nth-child(4) {
         display: none;
     }
 }
 
-@media only screen and (max-width: 960px) {
-    * {
+@media only screen and (max-width: 1000px) {
+    body {
         --grid-box: auto auto;
         --grid-footer: 100%;
+        --background-header-bg: none;
+        --header-position: relative;
+        --artible-mobile: 0px;
+        --header-overflow: none;
+        --header-index: none;
     }
     #ultimo .card:nth-child(4) {
         display: block;
     }
+    .links {
+        position: fixed;
+        width: 190px;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        background: var(--background-header);
+        z-index: 11;
+        transform: translateX(190px);
+        display: grid;
+        -webkit-box-shadow: 0px 0px 15px -5px rgba(0, 0, 0, 0.5);
+        box-shadow: 0px 0px 15px -5px rgba(0, 0, 0, 0.5);
+    }
+    .links .links-ul {
+        display: grid;
+    }
+    header {
+        display: grid;
+        place-items: center;
+    }
+    .title {
+        float: none;
+        margin-top: 15px;
+    }
+    .shadow:nth-child(1) {
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
 }
 
 @media only screen and (max-width: 640px) {
-    * {
+    body {
         --grid-box: auto;
         --grid-footer: auto;
     }

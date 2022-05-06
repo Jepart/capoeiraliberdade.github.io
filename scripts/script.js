@@ -1,3 +1,16 @@
+const menuResponsive = document.querySelector(".menuexpand")
+menuResponsive.addEventListener("click", function() {
+    document.querySelector("body").classList.add("mobile")
+})
+const menuBgResponsive = document.querySelector(".bgmenu-mobile")
+menuBgResponsive.addEventListener("click", function() {
+    document.querySelector("body").classList.remove("mobile")
+})
+const menuBgResponsive2 = document.querySelector(".menuclose")
+menuBgResponsive2.addEventListener("click", function() {
+    document.querySelector("body").classList.remove("mobile")
+})
+
 checkbox.addEventListener("change", function() {
     if (checkbox.checked) {
         modeLayout("dark")
@@ -14,7 +27,7 @@ const Menu = [
     { texto: "Serviços", link: "#", icon: "service", title: "Titulo aqui" },
     { texto: "Apadrinhe", link: "#", icon: "apadrinhar", title: "Titulo aqui" },
     { texto: "Loja", link: "#", icon: "cart", title: "Titulo aqui" },
-    { texto: "Contatos", link: "#", icon: "contact", title: "Titulo aqui" }
+    { texto: "Contatos", link: "/#contato", icon: "contact", title: "Titulo aqui" }
 ]
 
 
